@@ -17,12 +17,21 @@ const BoxList = () => {
             }
         ]
         setBoxes(newBoxes);
-        console.log(boxes);
+    }
+
+    function removeBox(evt) {
+        const boxId = evt.target.id;
+        const newBoxes = [...boxes];
+        
+        let i = 0;
+        while (i < newBoxes.length && boxId !== newBoxes[i].id) i++;
+        if (i !== newBoxes.length) newBoxes.splice(i, 1);
+        setBoxes(newBoxes);
     }
 
     return (
         <div className="BoxList">
-            {boxes.map(box => <Box key={box.id} height={box.height} width={box.width} backgroundColor={box.backgroundColor} />)}
+            {boxes.map(box => <Box key={box.id} id={box.id} height={box.height} width={box.width} backgroundColor={box.backgroundColor} handleClick={removeBox} />)}
             <NewBoxForm addBox={(formData) => handleNewBox(formData)} />
         </div>
     )
