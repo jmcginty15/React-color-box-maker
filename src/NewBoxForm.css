@@ -1,0 +1,28 @@
+.NewBoxForm {
+    width: 30%;
+    height: fit-content;
+    margin: auto;
+    overflow: hidden;
+    text-align: left;
+}
+
+.NewBoxForm-input {
+    float: right;
+}
+
+.NewBoxForm-line {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 5px;
+    height: fit-content;
+}
+
+.NewBoxForm-button {
+    text-align: right;
+}
+
+.NewBoxForm-header {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
