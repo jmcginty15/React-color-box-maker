@@ -23,6 +23,7 @@ exports[`matches snapshot 1`] = `
       >
         0 
         <input
+          data-testid="height-input"
           max="500"
           min="0"
           name="height"
@@ -44,6 +45,7 @@ exports[`matches snapshot 1`] = `
       >
         0 
         <input
+          data-testid="width-input"
           max="500"
           min="0"
           name="width"
@@ -65,6 +67,7 @@ exports[`matches snapshot 1`] = `
       >
         #000000 
         <input
+          data-testid="color-input"
           name="backgroundColor"
           type="color"
           value="#000000"

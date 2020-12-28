@@ -29,17 +29,17 @@ const NewBoxForm = ({ addBox }) => {
             <h4 className="NewBoxForm-header">Add a New Box:</h4>
             <p className="NewBoxForm-line"><label htmlFor="height">Height in pixels:</label>
                 <span className="NewBoxForm-input">{formData.height}&nbsp;
-                    <input name="height" type="range" min="0" max="500" value={formData.height} onChange={handleChange} />
+                    <input name="height" data-testid="height-input" type="range" min="0" max="500" value={formData.height} onChange={handleChange} />
                 </span>
             </p>
             <p className="NewBoxForm-line"><label htmlFor="width">Width in pixels:</label>
                 <span className="NewBoxForm-input">{formData.width}&nbsp;
-                    <input name="width" type="range" min="0" max="500" value={formData.width} onChange={handleChange} />
+                    <input name="width" data-testid="width-input" type="range" min="0" max="500" value={formData.width} onChange={handleChange} />
                 </span>
             </p>
             <p className="NewBoxForm-line"><label htmlFor="backgroundColor">Background color:</label>
                 <span className="NewBoxForm-input">{formData.backgroundColor}&nbsp;
-                    <input name="backgroundColor" type="color" value={formData.backgroundColor} onChange={handleChange} />
+                    <input name="backgroundColor" data-testid="color-input" type="color" value={formData.backgroundColor} onChange={handleChange} />
                 </span>
             </p>
             <p className="NewBoxForm-line NewBoxForm-button">
